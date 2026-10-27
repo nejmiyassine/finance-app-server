@@ -14,24 +14,31 @@
         "start": "bun --bun run src/server.ts",
         "lint": "eslint --ext .ts src",
         "lint:fix": "eslint --ext .ts src --fix",
-        "check:updates": "ncu --target minor"
+        "check:updates": "ncu --target minor",
+        "db:generate": "drizzle-kit generate",
+        "db:migrate": "drizzle-kit migrate",
+        "db:studio": "drizzle-kit studio"
     },
     "dependencies": {
         "compression": "^1.8.2",
         "dotenv": "^18.0.9",
+        "drizzle-orm": "^1.0.0-rc.5",
         "express": "^5.3.0",
         "helmet": "^8.3.0",
-        "morgan": "^1.12.1"
+        "morgan": "^1.12.1",
+        "postgres": "^3.4.9"
     },
     "devDependencies": {
         "@types/compression": "^1.8.1",
         "@types/express": "^5.0.6",
         "@types/morgan": "^1.9.10",
         "@types/node": "^26.6.5",
+        "drizzle-kit": "^1.0.0-rc.5",
         "eslint": "^10.13.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-config-standard-with-typescript": "^43.0.1",
         "npm-check-updates": "^23.1.1",
+        "tsx": "^4.23.15",
         "typescript": "^7.0.2"
     },
     "keywords": []
